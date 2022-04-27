@@ -6,6 +6,22 @@ html.init-slide-hidden {
     overflow: auto;
 }
 
+header {
+    overflow: hidden;
+    max-height: 20vh;
+
+    transition: max-height ease-in 2s;
+}
+
+html:not(.init-slide-hidden) header {
+    max-height: 0;
+    width: 100vw;
+}
+
+.init-slide-hidden header {
+    top: 0; 
+}
+
 #init-slide {
     height: 100vh;
     width: 100vw;
@@ -26,6 +42,10 @@ html.init-slide-hidden {
     transition-timing-function: ease-in-out;
 }
 
+#init-slide {
+    visibility: hidden;
+}
+
 .init-slide-hidden #init-slide {
     top: -100vh;
 }
@@ -40,4 +60,8 @@ html.init-slide-hidden {
 
 ul {
     font-size: 2em;
+}
+
+h1 {
+    text-align: center;
 }
