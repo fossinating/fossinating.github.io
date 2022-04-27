@@ -1,0 +1,24 @@
+<!-- Calculate the age in days and months -->
+{{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
+{{ $ageMonths := div (sub now.Unix .Date.Unix) 2592000 }}
+
+<!-- Published today -->
+{{ if eq $ageDays 0 }}
+
+    <p>Published today.</p>
+
+<!-- Published in the last 31 days -->
+{{ else if lt $ageDays 31 }}
+
+    <p>Published {{ $ageDays }}
+        {{ cond (eq $ageDays 1) "day" "days"}}
+        ago.</p>
+
+<!-- Published month(s) ago -->
+{{ else }}
+
+    <p>Published {{ $ageMonths }}
+        {{ cond (eq $ageMonths 1) "month" "months" }}
+        ago.</p>
+
+{{ end }}

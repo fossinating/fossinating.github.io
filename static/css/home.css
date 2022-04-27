@@ -1,0 +1,43 @@
+html {
+    overflow: hidden;
+}
+
+html.init-slide-hidden {
+    overflow: auto;
+}
+
+#init-slide {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.init-slide-hidden #init-slide {
+    top: -100vh;
+}
+
+#init-slide h1 {
+    color: var(--color-text-secondary)
+}
+
+.large-logo {
+    width: 50vw;
+}
+
+ul {
+    font-size: 2em;
+}

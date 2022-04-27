@@ -1,0 +1,31 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/project.css" type="text/css">
+{{ end }}
+
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <!--<div class="tag-container">
+        {{ range .Params.tags }}
+            <div class="tag {{ replace (lower .) "#" "-sharp" }}">{{.}}</div>
+        {{ end }}
+    </div>-->
+    {{ if .Params.links }}
+        <div class="project-links-section">
+            {{ range .Params.links }}
+                {{ range $key, $link := . }}
+                    <a class="link-button" href="{{ $link }}">{{ $key }}</a>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+    <h2>About {{ .Title }}</h2>
+    <p>{{ .Content }}</p>
+    {{ if .Params.related_images }}
+        <h2>Related Images</h2>
+        <div class="image-collection">
+        {{ range .Params.related_images }}
+            <img src="{{.}}">
+        {{ end }}
+        </div>
+    {{ end }}
+{{ end }}

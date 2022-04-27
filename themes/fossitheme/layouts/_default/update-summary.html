@@ -1,0 +1,22 @@
+<a class="update-summary {{ if .Params.featured_image }}with-image{{ end }}" href="{{ .RelPermalink }}">
+    {{ if .Params.featured_image }}
+        {{ $featured_image := (trim .Params.featured_image "/") | absURL }}
+        <img class="featured-image" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default ("image from " .Title) }}">
+    {{end}}
+    <div class="update-summary--core">
+        <div class="project-section">
+            <span class="project-title">{{ .Params.project }}</span>
+        </div>
+        
+        
+        <div class="update-section">
+            <span class="update-title">{{ .Title }}</span>
+            {{ range .Params.tags }}
+                <span class="tag {{ lower . }}">{{.}}</span>
+            {{ end }}
+        </div>
+
+        <p>{{ .Summary }}</p>
+        <div class="timestamp">{{ dateFormat "January 2, 2006" .Date }}</div>
+    </div>
+</a>

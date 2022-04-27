@@ -1,0 +1,16 @@
+baseURL = 'http://fossinating.com/'
+theme = ["fossitheme"]
+defaultContentLanguage = 'en'
+
+[Taxonomies]
+  tag = 'tags'
+
+
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        title = "Fossinating"
+        weight = 1
+
+
+summaryLength=20

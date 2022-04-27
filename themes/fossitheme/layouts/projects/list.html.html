@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <h1 class="section-header">Projects</h1>
+    <div class="projects-section">
+        {{ range where .Site.Pages ".Params.categories" "intersect" (slice "project-page")}}
+            <a class="project-summary" href="{{ .Permalink }}">
+                <span class="project-summary-title">{{ .Title }}</span>
+                <div class="tag-container">
+                    {{ range .Params.tags }}
+                        <div class="tag {{ replace (lower .) "#" "-sharp" }}">{{.}}</div>
+                    {{ end }}
+                </div>
+                <p>
+                    {{ .Summary }}
+                </p>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}

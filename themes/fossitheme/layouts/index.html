@@ -1,0 +1,44 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/home.css" type="text/css">
+{{ end }}
+
+{{ define "main" }}
+  <div id="init-slide">
+    <h1>Hi,</h1>
+    <img class="large-logo" src="/imgs/logo.png" alt="logo image">
+    <h1>I'm David</h1>
+  </div>
+  <div id="primary-page">
+    <div class="panel">
+      <h2 class="section-header">I develop:</h2>
+      <ul class="margin__none bullet__caret flex-center">
+        <li>Games</li> 
+        <li>Web Apps</li>
+        <li>Utility Software</li>
+        <li class="bullet__none">... and much more!</li>
+      </ul>
+    </div>
+    <div class="panel" id="recent-updates-pane">
+      <h2 class="section-header">Recent Updates</h2>
+      <div id="recent-updates-section">
+        {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+        {{ $mainSections := .Site.Params.mainSections | default (slice "updates") }}
+        {{/* Create a variable with that section to use in multiple places. */}}
+        {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+        {{/* Check to see if the section is defined for ranging through it */}}
+        {{ $section_count := len $section }}
+        {{ if ge $section_count 1 }}
+          {{ $n_posts := $.Param "recent_posts_number" | default 4 }}
+          {{/* Range through the first $n_posts items of the section */}}
+          {{ range (first $n_posts $section) }}
+            {{ .Render "update-summary" }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "scripts"}}
+<script src="/js/home.js"></script>
+{{ end }}
