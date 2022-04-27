@@ -209,6 +209,10 @@ main {
     margin-bottom: 0;
 }
 
+.scroll-icon {
+    font-size: 2em;
+}
+
 .panel:not(:first-child) .section-header {
     border-top: var(--color-primary) var(--border-size-primary) solid;
     padding-top: .5em
