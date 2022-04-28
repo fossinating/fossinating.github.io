@@ -105,6 +105,7 @@ header {
     display: grid;
     grid-template-columns: 5vh 1fr 5vh;
     grid-template-rows: 5vh auto;
+    border-bottom: var(--color-primary) 3px solid;
 }
 
 header h1 {
@@ -137,8 +138,14 @@ nav > a {
     align-items: center;
 }
 
+nav > a.active {
+    border-bottom: var(--color-text-primary) 2px solid;
+    border-end-end-radius: 2px;
+}
+
 nav > a:hover, nav>a:focus, .nav-popout-button:hover, .nav-popout-button:focus {
     color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 nav {
@@ -148,7 +155,6 @@ nav {
     overflow: clip;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    border-bottom: var(--color-primary) 3px solid;
 
     display: flex;
     flex-direction: column;
@@ -188,7 +194,7 @@ footer {
 
 main {
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     padding: 1em;
     padding-top: 0;
 }
@@ -312,10 +318,8 @@ a.update-summary {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 2em;
+    margin: 2em;
     padding: 1em;
-
-    transition: width ease 0.5s;
 
     background-color: var(--color-background-secondary);
     border: var(--color-primary) var(--border-size-primary) solid;
@@ -401,4 +405,81 @@ ul.bullet__caret  {
 .tag.godot {
     background-color: #478cbf;
     color: var(--color-text-secondary);
+}
+
+/* Desktop view !! */
+
+@media screen and (min-width: 800px) {
+    #primary-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .panel {
+        height: 100%;
+        padding: .5em;
+    }
+
+    main {
+        padding-bottom: 0;
+    }
+
+    .panel:not(:first-child) .section-header {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    #recent-updates-pane {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #recent-updates-section {
+        overflow: auto;
+    }
+
+    .panel:not(:first-child) {
+        border-left: var(--color-primary) var(--border-size-primary) solid;
+    }
+
+    .projects-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-summary {
+        width: 25vw;
+        height: 20vw;
+
+        transition: width ease .5s, height ease 0.5s;
+    }
+
+    .project-summary:focus, .project-summary:hover {
+        width: 27vw;
+        height: 25vw;
+    }
+
+    header {
+        grid-template-columns: 5vh 1fr auto;
+        grid-template-rows: 5vh;
+    }
+
+    .nav-popout-button {
+        display: none;
+    }
+
+    nav {
+        grid-column: 3/4;
+        grid-row: 1/2;
+
+        height: auto;
+        max-height: 5vh;
+
+        flex-direction: row;
+    }
+    
+    nav > a {
+        margin: .5em;
+    }
 }

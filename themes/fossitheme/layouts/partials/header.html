@@ -3,6 +3,6 @@
 <h1>fossinating</h1>
 <a href="javascript:void(0);" onclick="popoutNav()" class="nav-popout-button">&#9776;</a>
 <nav>
-    <a href="{{ ref . "/updates/_index.md" }}">Updates</a>
-    <a href="{{ ref . "/projects/_index.md" }}">Projects</a>
+    <a {{ if in .Permalink "updates" }}class="active"{{ end }} href="{{ ref . "/updates/_index.md" }}">Updates</a>
+    <a {{ if in .Permalink "projects" }}class="active"{{ end }} href="{{ ref . "/projects/_index.md" }}">Projects</a>
 </nav>
