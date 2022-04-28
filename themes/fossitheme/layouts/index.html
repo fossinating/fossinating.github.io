@@ -33,7 +33,7 @@
           {{ $n_posts := $.Param "recent_posts_number" | default 4 }}
           {{/* Range through the first $n_posts items of the section */}}
           {{ range (first $n_posts $section) }}
-            {{ .Render "update-summary" }}
+            {{- partial "update-summary.html" (dict "context" . "show_project" true) }}
           {{ end }}
         {{ end }}
       </div>

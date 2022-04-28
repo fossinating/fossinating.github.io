@@ -3,29 +3,52 @@
 {{ end }}
 
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <!--<div class="tag-container">
-        {{ range .Params.tags }}
-            <div class="tag {{ replace (lower .) "#" "-sharp" }}">{{.}}</div>
-        {{ end }}
-    </div>-->
-    {{ if .Params.links }}
-        <div class="project-links-section">
-            {{ range .Params.links }}
-                {{ range $key, $link := . }}
-                    <a class="link-button" href="{{ $link }}">{{ $key }}</a>
+    <div id="project-info">
+        <div class="info-panel">
+            <h1>{{ .Title }}</h1>
+            <!--<div class="tag-container">
+                {{ range .Params.tags }}
+                    <div class="tag {{ replace (lower .) "#" "-sharp" }}">{{.}}</div>
                 {{ end }}
+            </div>-->
+            {{ if .Params.links }}
+                <div class="project-links-section">
+                    {{ range .Params.links }}
+                        {{ range $key, $link := . }}
+                            <a class="link-button" href="{{ $link }}">{{ $key }}</a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+            <h2>About {{ .Title }}</h2>
+            <p>{{ .Content }}</p>
+            {{ if .Params.related_images }}
+                <h2>Related Images</h2>
+                <div class="image-collection">
+                {{ range .Params.related_images }}
+                    <img src="{{.}}">
+                {{ end }}
+                </div>
             {{ end }}
         </div>
-    {{ end }}
-    <h2>About {{ .Title }}</h2>
-    <p>{{ .Content }}</p>
-    {{ if .Params.related_images }}
-        <h2>Related Images</h2>
-        <div class="image-collection">
-        {{ range .Params.related_images }}
-            <img src="{{.}}">
-        {{ end }}
+        <div class="updates-panel">
+            <h2>Recent Updates</h2>
+            <div class="updates-container">
+                {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+                {{ $mainSections := .Site.Params.mainSections | default (slice "updates") }}
+                {{/* Create a variable with that section to use in multiple places. */}}
+                {{ $section := where (where .Site.RegularPages "Section" "in" $mainSections) "Params.project" "=" .Title}}
+                {{/* Check to see if the section is defined for ranging through it */}}
+                {{ $section_count := len $section }}
+                {{ if ge $section_count 1 }}
+                {{ $n_posts := $.Param "recent_posts_number" | default 4 }}
+                {{/* Range through the first $n_posts items of the section */}}
+                {{ range (first $n_posts $section) }}
+                    {{$show_project := false}}
+                    {{- partial "update-summary.html" (dict "context" . "show_project" false) }}
+                    {{ end }}
+                {{ end }}
+            </div>
         </div>
-    {{ end }}
+    </div>
 {{ end }}

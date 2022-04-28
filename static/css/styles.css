@@ -482,4 +482,20 @@ ul.bullet__caret  {
     nav > a {
         margin: .5em;
     }
+
+    #project-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-flow: column;
+    }
+
+    .info-panel, .updates-panel {
+        padding: 0 2vw;
+    }
+
+    .updates-panel {
+        grid-column: 2/3;
+        grid-row: 1/10;
+        border-left: var(--color-primary) var(--border-size-primary) solid;
+    }
 }

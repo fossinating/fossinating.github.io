@@ -1,0 +1,24 @@
+<a class="update-summary {{ if .context.Params.featured_image }}with-image{{ end }}" href="{{ .context.RelPermalink }}">
+    {{ if .context.Params.featured_image }}
+        {{ $featured_image := (trim .context.Params.featured_image "/") | absURL }}
+        <img class="featured-image" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default ("image from " .Title) }}">
+    {{end}}
+    <div class="update-summary--core">
+        {{ if ne .show_project false }}
+            <div class="project-section">
+                <span class="project-title">{{ .context.Params.project }}</span>
+            </div>
+        {{ end }}
+        
+        
+        <div class="update-section">
+            <span class="update-title">{{ .context.Title }}</span>
+            {{ range .context.Params.tags }}
+                <span class="tag {{ lower . }}">{{.}}</span>
+            {{ end }}
+        </div>
+
+        <p>{{ .context.Summary }}</p>
+        <div class="timestamp">{{ dateFormat "January 2, 2006" .context.Date }}</div>
+    </div>
+</a>
