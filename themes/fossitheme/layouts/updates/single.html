@@ -5,7 +5,7 @@
 {{ define "main" }}
     <div id="update-info">
         {{ range where (where .Site.Pages ".Params.categories" "intersect" (slice "project-page")) ".Params.project" .Params.project }}
-            <a class="project-title" href="{{ .RelPermalink }}">&#129044; {{ .Title }}</a>
+            <a class="project-title" href="{{ .RelPermalink }}">❮ {{ .Title }}</a>
         {{ end }}
     
         <h1>{{ .Title }}</h1>
