@@ -590,7 +590,7 @@ ul.bullet__caret  {
         margin: 0;
     }
 
-    .updates-holder .update-summary {
+    .updates-section .update-summary {
         margin: 0;
         width: 30%;
         aspect-ratio: 1.2/1;
