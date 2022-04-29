@@ -136,4 +136,14 @@ h1 {
         width: 60%;
     }
     
+
+    .social-panel img {
+        height: 60%;
+        width: 60%;
+        aspect-ratio: 1/1;
+        /*aspect-ratio: 1/1;*/
+        object-fit: contain;
+    }
+
+    
 }
