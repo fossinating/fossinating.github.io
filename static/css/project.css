@@ -83,7 +83,14 @@ h1, h2, p {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: var(--color-text-primary);
+    --shadow-val: 1px;
+    --neg-shadow-val: -1px;
+    text-shadow:
+    var(--neg-shadow-val) var(--neg-shadow-val) var(--shadow-val) var(--color-background),
+    var(--shadow-val) var(--neg-shadow-val) var(--shadow-val) var(--color-background),
+    var(--neg-shadow-val) var(--shadow-val) var(--shadow-val) var(--color-background),
+    var(--shadow-val) var(--shadow-val) var(--shadow-val) var(--color-background);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;

@@ -32,7 +32,7 @@
                     {{ $num_images := len .Params.related_images }}
                     {{ range $index, $val := .Params.related_images }}
                         <div class="mySlides fade">
-                            <div class="numbertext">{{ add 1 $index }} / {{ $num_images }}</div>
+                            <!--<div class="numbertext">{{ add 1 $index }} / {{ $num_images }}</div>-->
                             <img src="{{ $val.source }}" style="width:100%" alt="{{ $val.alt }}">
                         </div>
                     {{ end }}
