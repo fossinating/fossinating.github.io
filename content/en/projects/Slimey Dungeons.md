@@ -3,13 +3,14 @@ title: "Slimey Dungeons"
 categories:
 - project-page
 project: "Slimey Dungeons"
+weight: 2
 related_images:
-- /imgs/SlimeyDungeons1.png
-- /imgs/SlimeyDungeons2.png
-- /imgs/SlimeyDungeons3.png
+- { "source": "/imgs/SlimeyDungeons1.png", "alt": "Screenshot of Slimey Dungeons main menu" }
+- { "source": "/imgs/SlimeyDungeons2.png", "alt": "Screenshot of a Slimey Dungeons level"}
+- { "source": "/imgs/SlimeyDungeons3.png", "alt": "Screenshot of a Slimey Dungeons level"}
 links:
 - "download game": "https://fossinating.itch.io/slimey-dungeons"
-- "view source": "https://github.com/MrRiptide/Slimey-Dungeons"
+- "view source": "https://github.com/fossinating/Slimey-Dungeons"
 tags:
 - Godot
 ---

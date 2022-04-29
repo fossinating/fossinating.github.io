@@ -1,18 +1,47 @@
 {{ define "main" }}
-    <h1 class="section-header">Updates</h1>
-    <div class="updates-section">
-        {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-        {{ $mainSections := .Site.Params.mainSections | default (slice "updates") }}
-        {{/* Create a variable with that section to use in multiple places. */}}
-        {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
-        {{/* Check to see if the section is defined for ranging through it */}}
-        {{ $section_count := len $section }}
-        {{ if ge $section_count 1 }}
-          {{ $n_posts := $.Param "recent_posts_number" | default 4 }}
-          {{/* Range through the first $n_posts items of the section */}}
-          {{ range (first $n_posts $section) }}
-            {{ .Render "update-summary" }}
-          {{ end }}
+  <h1 class="section-header">Updates</h1>
+  <div class="updates-section">
+      {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+      {{ $mainSections := .Site.Params.mainSections | default (slice "updates") }}
+      {{/* Create a variable with that section to use in multiple places. */}}
+      {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+      {{/* Check to see if the section is defined for ranging through it */}}
+      {{ $section_count := len $section }}
+      {{ if ge $section_count 1 }}
+        {{ $n_posts := $.Param "recent_posts_number" | default 4 }}
+        {{/* Range through the first $n_posts items of the section */}}
+        <div class="updates-holder">
+        {{ range ( .Paginate $section).Pages }}
+          {{- partial "update-summary.html" (dict "context" . "show_project" true) }}
         {{ end }}
-    </div>
+        </div>
+        <div class="pagination-menu" role="navigation">
+          {{ if .Paginator.HasPrev }}
+          {{ if .Paginator.Prev.HasPrev }}
+            <a href="{{ .Paginator.First.URL }}">&#171;</a>
+            {{ else }}
+              <a class="hidden" href=".">&#171;</a>
+            {{ end }}
+              <a href="{{ .Paginator.Prev.URL }}">&#8249;</a>
+          {{ else }}
+            <a class="hidden" href=".">&#171;</a>
+            <a class="hidden" href=".">&#8249;</a>
+          {{ end }}
+          {{ range .Paginator.Pagers }}
+            <a href="{{.URL}}">{{ .PageNumber }}</a>
+          {{ end }}
+          {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}">&#8250;</a>
+            {{ if .Paginator.Next.HasNext }}
+              <a href="{{ .Paginator.Last.URL }}">&#187;</a>
+            {{ else }}
+              <a class="hidden" href=".">&#187;</a>
+            {{ end }}
+          {{ else }}
+            <a class="hidden" href=".">&#8250;</a>
+            <a class="hidden" href=".">&#187;</a>
+          {{ end }}
+        </div>
+      {{ end }}
+  </div>
 {{ end }}

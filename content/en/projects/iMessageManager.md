@@ -4,8 +4,9 @@ categories:
 - iMessageManager
 - project-page
 project: "iMessageManager"
+weight: 4
 links:
-- "view source": "https://github.com/mrriptide/iMessageManager"
+- "view source": "https://github.com/fossinating/iMessageManager"
 tags:
 - C#
 ---

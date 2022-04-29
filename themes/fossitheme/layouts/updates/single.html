@@ -1,0 +1,36 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/project.css" type="text/css">
+{{ end }}
+
+{{ define "main" }}
+    <div id="update-info">
+        {{ range where (where .Site.Pages ".Params.categories" "intersect" (slice "project-page")) ".Params.project" .Params.project }}
+            <a class="project-title" href="{{ .RelPermalink }}">&#129044; {{ .Title }}</a>
+        {{ end }}
+    
+        <h1>{{ .Title }}</h1>
+        <div class="tag-container">
+            {{ range .Params.tags }}
+                <div class="tag {{ replace (lower .) "#" "-sharp" }}">{{.}}</div>
+            {{ end }}
+        </div>
+        {{ if .Params.links }}
+            <div class="project-links-section">
+                {{ range .Params.links }}
+                    {{ range $key, $link := . }}
+                        <a class="link-button" href="{{ $link }}">{{ $key }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+        {{ .Content }}
+        {{ if .Params.related_images }}
+            <h2>Related Images</h2>
+            <div class="image-collection">
+            {{ range .Params.related_images }}
+                <img src="{{.}}">
+            {{ end }}
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

@@ -4,12 +4,13 @@ categories:
 - Course-Manager
 - project-page
 project: "Course Manager"
+weight: 1
 related_images:
-- "/imgs/CourseManager1.png"
-- "/imgs/CourseManager2.png"
+- { "source": "/imgs/CourseManager1.png", "alt": "Screenshot of Course Manager search functionality"}
+- { "source": "/imgs/CourseManager2.png", "alt": "Screenshot of sample schedule in Course Manager"}
 links:
 - "view live": "https://courses.fossinating.com"
-- "view source": "https://github.com/mrriptide/Course-Manager"
+- "view source": "https://github.com/fossinating/Course-Manager"
 tags:
 - Python
 - HTML

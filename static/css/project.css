@@ -10,6 +10,10 @@ h1, h2, p {
     text-align: center;
 }
 
+.update-summary p {
+    text-align: left;
+}
+
 /* links section */
 
 .project-links-section {

@@ -1,6 +1,10 @@
 baseURL = 'http://fossinating.com/'
 theme = ["fossitheme"]
 defaultContentLanguage = 'en'
+paginate = 3
+
+[params]
+  socials = [{site = "twitter", link = "https://twitter.com/mrriptide_", username = "mrriptide_"}, {site = "twitch",link = "https://twitch.tv/fossinating",username = "fossinating"}, {site = "github", link = "https://github.com/fossinating", username = "fossinating"}]
 
 [Taxonomies]
   tag = 'tags'
