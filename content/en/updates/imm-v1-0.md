@@ -9,3 +9,10 @@ summary: "Official release of iMessageManager"
 date: 2021-09-05
 ---
 Official release of iMessageManager
+
+## Current Features
+
+- Search Messages
+    - Search messages by sender, group chat name, or contents
+- Chat Viewer
+    - Revisit past conversations and scroll to your heart's content
