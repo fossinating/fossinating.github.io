@@ -126,6 +126,7 @@ nav {
 nav.popout {
     max-height: 4em;
     padding-bottom: .2em;
+    box-sizing: content-box;
 }
 
 .nav-popout-button {
