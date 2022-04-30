@@ -24,7 +24,7 @@
         {{ range $site := .Site.Params.Socials }}
           <a class="social-panel" href="{{$site.link}}">
             <img src="/imgs/{{$site.site}}.png" alt="{{$site.site}} logo">
-            <span>{{$site.username}}</span>
+            <span>{{ $site.username }}</span>
           </a>
         {{ end }}
       </div>

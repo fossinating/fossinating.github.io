@@ -1,7 +1,7 @@
 <a class="update-summary {{ if .context.Params.featured_image }}with-image{{ end }}" href="{{ .context.RelPermalink }}">
     {{ if .context.Params.featured_image }}
         {{ $featured_image := (trim .context.Params.featured_image "/") | absURL }}
-        <img class="featured-image" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default ("image from " .Title) }}">
+        <img class="featured-image" src="{{ $featured_image }}" alt="{{ .context.Params.featured_image_alt | default ("image from " .Title) }}">
     {{end}}
     <div class="update-summary--core">
         {{ if ne .show_project false }}
