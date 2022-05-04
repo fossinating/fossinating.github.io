@@ -7,6 +7,7 @@ tags: [major]
 external_link: "https://github.com/MrRiptide/iMessageManager"
 summary: "Official release of iMessageManager"
 date: 2021-09-05
+draft: true
 ---
 Official release of iMessageManager
 
