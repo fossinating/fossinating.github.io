@@ -303,7 +303,11 @@ a.update-summary {
 }
 
 #update-info ul li ul li {
-    font-size: .8em;
+    font-size: .9em;
+}
+
+#update-info ul li ul li ul li {
+    font-size: 1em;
 }
 
 #update-info .project-title {
