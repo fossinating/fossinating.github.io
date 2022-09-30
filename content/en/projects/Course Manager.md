@@ -10,7 +10,7 @@ related_images:
 - { "source": "/imgs/CourseManager2.png", "alt": "Screenshot of sample schedule in Course Manager"}
 links:
 - "view live": "https://courses.fossinating.com"
-- "view source": "https://github.com/fossinating/Course-Manager"
+- "view source": "https://github.com/fossinating/CourseManager"
 tags:
 - Python
 - HTML
