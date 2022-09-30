@@ -1,5 +1,5 @@
 ---
-title: "1.0"
+title: "0.1"
 categories:
 - project-update
 project: "Course Manager"
