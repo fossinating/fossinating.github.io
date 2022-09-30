@@ -1,5 +1,5 @@
 ---
-title: "1.1 - Design Update"
+title: "0.2 - Design Update"
 categories:
 - project-update
 project: "Course Manager"
