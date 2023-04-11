@@ -2,9 +2,9 @@
 title: "iMessageManager"
 categories:
 - iMessageManager
-- project-page
+#- project-page
 project: "iMessageManager"
-weight: 4
+weight: 6
 draft: true
 links:
 - "view source": "https://github.com/fossinating/iMessageManager"
