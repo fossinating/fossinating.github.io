@@ -425,6 +425,11 @@ ul.bullet__caret  {
     color: var(--color-text-secondary);
 }
 
+.tag.news {
+    background-color: #08977f;
+    color: var(--color-text-secondary);
+}
+
 .tag.minor {
     background-color: #742ead;
     color: var(--color-text-secondary) ;
@@ -527,7 +532,7 @@ ul.bullet__caret  {
     }
 
     .project-summary:focus, .project-summary:hover {
-        max-width: max(32%, 21em);
+        max-width: max(31%, 20.5em);
     }
 
     header {
