@@ -1,4 +1,4 @@
-baseURL = 'http://fossinating.com/'
+baseURL = 'https://fossinating.com/'
 theme = ["fossitheme"]
 defaultContentLanguage = 'en'
 paginate = 3
