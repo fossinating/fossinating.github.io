@@ -4,7 +4,7 @@ categories:
 - Chaindle
 - project-page
 project: "Chaindle"
-weight: 5
+weight: -1
 related_images:
 - { "source": "/imgs/Chaindle1.png", "alt": "Screenshot of Chaindle gameplay" }
 - { "source": "/imgs/Chaindle2.png", "alt": "Screenshot of Chaindle gameplay" }

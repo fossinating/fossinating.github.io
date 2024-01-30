@@ -1,10 +1,10 @@
 ---
 title: "Clear Recipes"
 categories:
-- Course-Manager
+- Clear-Recipes
 - project-page
 project: "Course Manager"
-weight: 1
+weight: -7
 related_images:
 - { "source": "/imgs/ClearRecipes1.png", "alt": "Screenshot of Clear Recipes search functionality"}
 - { "source": "/imgs/ClearRecipes2.png", "alt": "Screenshot of the upload page for Clear Recipes"}

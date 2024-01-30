@@ -4,7 +4,7 @@ categories:
 - Free-Shipping
 - project-page
 project: "Free Shipping"
-weight: 3
+weight: -3
 related_images:
 - { "source": "/imgs/FreeShipping1.png", "alt": "Free Shipping cover image" }
 - { "source": "/imgs/FreeShipping2.png", "alt": "Screenshot of a Free Shipping level"}

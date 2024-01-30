@@ -4,7 +4,7 @@ categories:
 - Tarheel-Compass
 - project-page
 project: "Tarheel Compass"
-weight: 1
+weight: -6
 related_images:
 - { "source": "/imgs/CourseManager1.png", "alt": "Screenshot of Course Manager search functionality"}
 - { "source": "/imgs/CourseManager2.png", "alt": "Screenshot of sample schedule in Course Manager"}

@@ -4,7 +4,7 @@ categories:
 - Slimey-Dungeons
 - project-page
 project: "Slimey Dungeons"
-weight: 4
+weight: -2
 related_images:
 - { "source": "/imgs/SlimeyDungeons1.png", "alt": "Screenshot of Slimey Dungeons main menu" }
 - { "source": "/imgs/SlimeyDungeons2.png", "alt": "Screenshot of a Slimey Dungeons level"}

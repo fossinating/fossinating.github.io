@@ -4,7 +4,7 @@ categories:
 - Disruptive-Dungeons
 - project-page
 project: "Disruptive Dungeons"
-weight: 2
+weight: -4
 related_images:
 - { "source": "/imgs/DisruptiveDungeons1.png", "alt": "Screenshot of Disruptive Dungeons cover image" }
 - { "source": "/imgs/DisruptiveDungeons2.png", "alt": "Screenshot of a Disruptive Dungeons level"}
