@@ -6,7 +6,6 @@ project: "Clear Recipes"
 date: 2023-10-29
 tags: [major]
 summary: "Clear Recipes has been released in Beta!"
-draft: false
 ---
 Introducing Clear Recipes!
 

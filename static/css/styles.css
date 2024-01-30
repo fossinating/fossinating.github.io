@@ -455,6 +455,11 @@ ul.bullet__caret  {
     color: var(--color-text-secondary);
 }
 
+.tag.nextjs {
+    background-color: #000000;
+    color: var(--color-text-secondary);
+}
+
 #project-info {
     margin: 0 1em;
 }
