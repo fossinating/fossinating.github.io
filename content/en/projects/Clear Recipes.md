@@ -3,7 +3,7 @@ title: "Clear Recipes"
 categories:
 - Clear-Recipes
 - project-page
-project: "Course Manager"
+project: "Clear Recipes"
 weight: -7
 related_images:
 - { "source": "/imgs/ClearRecipes1.png", "alt": "Screenshot of Clear Recipes search functionality"}
