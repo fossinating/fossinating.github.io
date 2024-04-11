@@ -3,7 +3,7 @@ title: "Game Jam Release"
 categories:
 - project-update
 project: "A Flowering Apocalypse"
-date: 2024-4-01
+date: 2024-04-01
 tags: [major]
 summary: Introducing a new sandbox game built as a part of the UNC Game Dev Club's Collegiate Game Jam
 draft: false
