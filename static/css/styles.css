@@ -374,7 +374,7 @@ a.update-summary {
     transition: transform ease .5s, height ease 0.5s, opacity ease 0.5s;
 }
 
-@media (hover: hover) and (pointer: file) {
+@media (hover: hover) and (pointer: fine) {
     .projects-section:has(.project-summary:hover) > .project-summary:not(:hover) {
         transform: scale(0.98);
         opacity: 0.7;
