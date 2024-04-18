@@ -370,10 +370,26 @@ a.update-summary {
     /* Fixing link stuff */
     color: var(--color-text-primary);
     text-decoration: none;
+
+    transition: transform ease .5s, height ease 0.5s, opacity ease 0.5s;
 }
 
-.project-summary:hover, .project-summary:focus {
-    border-color: var(--color-accent);
+@media (hover: hover) and (pointer: file) {
+    .projects-section:has(.project-summary:hover) > .project-summary:not(:hover) {
+        transform: scale(0.98);
+        opacity: 0.7;
+    } 
+
+    .project-summary:hover, .project-summary:focus {
+        border-color: var(--color-accent);
+        transform: scale(1.025);
+    } 
+}
+
+@media (prefers-reduced-motion) {
+    .project-summary {
+        transform: scale(1);
+    }
 }
 
 .project-summary-title {
@@ -531,18 +547,24 @@ ul.bullet__caret  {
         max-width: max(30%, 20em);
         min-height: min-content;
         aspect-ratio: 1.2/1;
-
-        transition: width ease .5s, height ease 0.5s;
-        transition: max-width ease .5s, height ease 0.5s;
-    }
-
-    .project-summary:focus, .project-summary:hover {
-        max-width: max(31%, 20.5em);
     }
 
     header {
-        grid-template-columns: 5vh 1fr auto;
-        grid-template-rows: 5vh;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header > .img--container {
+        align-self: flex-start;
+    }
+
+    header > h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5vh;
     }
 
     .nav-popout-button {
