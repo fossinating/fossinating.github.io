@@ -543,6 +543,7 @@ ul.bullet__caret  {
         flex-wrap: wrap;
         gap: min(5cqw, 40px);
         max-width: min(1400px, 90%);
+        margin: 0 auto;
     }
 
     .project-summary {
