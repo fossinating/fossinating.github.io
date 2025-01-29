@@ -6,8 +6,8 @@ categories:
 project: "Clear Recipes"
 weight: -7
 related_images:
-- { "source": "/imgs/ClearRecipes1.png", "alt": "Screenshot of Clear Recipes search functionality"}
-- { "source": "/imgs/ClearRecipes2.png", "alt": "Screenshot of the upload page for Clear Recipes"}
+- { "source": "/imgs/ClearRecipes/Preview1.png", "alt": "Screenshot of Clear Recipes search functionality"}
+- { "source": "/imgs/ClearRecipes/Preview2.png", "alt": "Screenshot of the upload page for Clear Recipes"}
 links:
 - "view live": "https://recipes.fossinating.com"
 - "view source": "https://github.com/fossinating/ClearRecipes"

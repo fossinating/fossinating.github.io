@@ -6,10 +6,10 @@ categories:
 project: "Disruptive Dungeons"
 weight: -4
 related_images:
-- { "source": "/imgs/DisruptiveDungeons1.png", "alt": "Screenshot of Disruptive Dungeons cover image" }
-- { "source": "/imgs/DisruptiveDungeons2.png", "alt": "Screenshot of a Disruptive Dungeons level"}
-- { "source": "/imgs/DisruptiveDungeons3.png", "alt": "Screenshot of a Disruptive Dungeons level"}
-- { "source": "/imgs/DisruptiveDungeons4.png", "alt": "Screenshot of a Disruptive Dungeons level"}
+- { "source": "/imgs/DisruptiveDungeons/Preview1.png", "alt": "Screenshot of Disruptive Dungeons cover image" }
+- { "source": "/imgs/DisruptiveDungeons/Preview2.png", "alt": "Screenshot of a Disruptive Dungeons level"}
+- { "source": "/imgs/DisruptiveDungeons/Preview3.png", "alt": "Screenshot of a Disruptive Dungeons level"}
+- { "source": "/imgs/DisruptiveDungeons/Preview4.png", "alt": "Screenshot of a Disruptive Dungeons level"}
 links:
 - "download game": "https://fossinating.itch.io/disruptive-dungeons"
 - "view source": "https://github.com/fossinating/Disruptive-Dungeons"

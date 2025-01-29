@@ -6,8 +6,8 @@ categories:
 project: "Tarheel Compass"
 weight: -6
 related_images:
-- { "source": "/imgs/CourseManager1.png", "alt": "Screenshot of Course Manager search functionality"}
-- { "source": "/imgs/CourseManager2.png", "alt": "Screenshot of sample schedule in Course Manager"}
+- { "source": "/imgs/TarheelCompass/Preview1.png", "alt": "Screenshot of Course Manager search functionality"}
+- { "source": "/imgs/TarheelCompass/Preview2.png", "alt": "Screenshot of sample schedule in Course Manager"}
 links:
 - "view live": "https://tarheelcompass.com"
 #- "view source": "https://github.com/fossinating/CourseManager"

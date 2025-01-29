@@ -6,10 +6,10 @@ categories:
 project: "Free Shipping"
 weight: -3
 related_images:
-- { "source": "/imgs/FreeShipping1.png", "alt": "Free Shipping cover image" }
-- { "source": "/imgs/FreeShipping2.png", "alt": "Screenshot of a Free Shipping level"}
-- { "source": "/imgs/FreeShipping3.png", "alt": "Screenshot of a Free Shipping level"}
-- { "source": "/imgs/FreeShipping4.png", "alt": "Screenshot of a Free Shipping level"}
+- { "source": "/imgs/FreeShipping/Preview1.png", "alt": "Free Shipping cover image" }
+- { "source": "/imgs/FreeShipping/Preview2.png", "alt": "Screenshot of a Free Shipping level"}
+- { "source": "/imgs/FreeShipping/Preview3.png", "alt": "Screenshot of a Free Shipping level"}
+- { "source": "/imgs/FreeShipping/Preview4.png", "alt": "Screenshot of a Free Shipping level"}
 links:
 - "download game": "https://fossinating.itch.io/free-shipping"
 - "view source": "https://github.com/fossinating/Free-Shipping"

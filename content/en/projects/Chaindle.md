@@ -6,8 +6,8 @@ categories:
 project: "Chaindle"
 weight: -1
 related_images:
-- { "source": "/imgs/Chaindle1.png", "alt": "Screenshot of Chaindle gameplay" }
-- { "source": "/imgs/Chaindle2.png", "alt": "Screenshot of Chaindle gameplay" }
+- { "source": "/imgs/Chaindle/Preview1.png", "alt": "Screenshot of Chaindle gameplay" }
+- { "source": "/imgs/Chaindle/Preview2.png", "alt": "Screenshot of Chaindle gameplay" }
 links:
 - "view live": "https://chaindle.fossinating.com"
 - "view source": "https://github.com/fossinating/Chaindle"

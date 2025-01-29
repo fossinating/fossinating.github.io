@@ -6,10 +6,10 @@ categories:
 project: "A Flowering Apocalypse"
 weight: -8
 related_images:
-- { "source": "/imgs/Flowering-Apocalypse/main1.png", "alt": "Screenshot of A Flowering Apocalypse cover image" }
-- { "source": "/imgs/Flowering-Apocalypse/main2.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
-- { "source": "/imgs/Flowering-Apocalypse/main3.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
-- { "source": "/imgs/Flowering-Apocalypse/main4.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
+- { "source": "/imgs/FloweringApocalypse/main1.png", "alt": "Screenshot of A Flowering Apocalypse cover image" }
+- { "source": "/imgs/FloweringApocalypse/main2.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
+- { "source": "/imgs/FloweringApocalypse/main3.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
+- { "source": "/imgs/FloweringApocalypse/main4.png", "alt": "In-game screenshot from A Flowering Apocalypse"}
 links:
 - "download game": "https://fossinating.itch.io/a-flowering-apocalypse"
 - "view source": "https://github.com/fossinating/A-Flowering-Apocalypse"
