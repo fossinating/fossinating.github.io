@@ -541,6 +541,9 @@ ul.bullet__caret  {
     .projects-section {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: min(5cqw, 40px);
+        max-width: min(1400px, 90%);
+        margin: 0 auto;
     }
 
     .project-summary {
