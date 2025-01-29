@@ -16,4 +16,4 @@ tags:
 - Python
 summary: Web app designed to assist UNC students in planning their schedules
 ---
-Tarheel Compass was a web app designed to help UNC students plan their schedules. Further development has been canceled, to see more information about this decision please visit our post [here](https://fossinating.com/updates/tc-i2)
+Tarheel Compass was a web app designed to help UNC students plan their schedules. Further development has been canceled, to see more information about this decision please visit our post [here](https://fossinating.com/updates/tarheel_compass/i2/).
