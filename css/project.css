@@ -19,7 +19,11 @@ h1, h2, p {
 .project-links-section {
     display: flex;
 
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.project-links-section .link-button {
+    margin: 0 1em;
 }
 
 .link-button {
